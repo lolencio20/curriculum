@@ -1,0 +1,105 @@
+/*https://colorhunt.co/palette/5671897b8fa1cfb997fad6a5
+
+567189
+7B8FA1
+CFB997
+FAD6A5
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+#navegacion{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    user-select: none;
+}
+.navegador input{
+    display: none;
+}
+.navegar{
+    width: 100px;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+#nav-conocimientos input:checked + body{
+    margin-left: -100vw;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    overflow: hidden;
+/*    margin-left: -100vw;*/
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #FAD6A5;
+}
+.main{
+    background: #567189;
+}
+
+.imagen-main, .contenido-main{
+	width: 50%;
+}
+.contenido-main{
+	display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.conocimientos{
+    background: #7B8FA1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-directiaon: row;
+    align-items: center;
+    gap: 10px;
+}
+.conocimiento{
+	background: #fff;
+    width: 430px;
+    height: 100px;
+}
+.sobre-mi{
+    background: #CFB997;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.sobre-mi p{
+    background: #567189;
+    padding: 50px 10px 50px 20px;
+    border-radius: 0px 30px 30px 0px;
+    color: #fff;
+    text-align: justify;
+}
+.sobre-mi p, .sobre-mi h2{
+	width: 45%;
+}
+.sobre-mi h2{
+    color: #000;
+    padding-left: 10%;
+}
