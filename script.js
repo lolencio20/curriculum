@@ -49,11 +49,12 @@ console.log(habilidades)
 habilidades.forEach((e)=>{
 	skillBox=`<div class="conocimiento" id="${e.nombre}"><img src="${e.img}">
 			<div>
-			<h2>html</h2>
+			<h2>${e.nombre}</h2>
 			<p>${e.exp}</p>
 		</div>
 	</div>`
 	contConocimientos.innerHTML+=skillBox
+	skillBox=""
 
 
 })
