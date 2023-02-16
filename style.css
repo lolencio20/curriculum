@@ -8,42 +8,46 @@ FAD6A5
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
+    user-select: none;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+nav{
 
-#navegacion{
-    width: 100vw;
-    position: fixed;
     display: flex;
-    justify-content: end;
+    position: fixed;
+    width: 100vw;
+    transition: margin 1.2s;
+
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
     gap: 10px;
-    user-select: none;
+
 }
-.navegador input{
-    display: none;
+nav ul li{
+    list-style: none;
 }
-.navegar{
-    width: 100px;
-    display: block;
+.button-nav{
     background: #fff;
-    padding: 10px;
+    border: none;
+    display: block;
+    width: 100px;
+    height: 8vh;
+    font-size: 15px;
+    border-radius: 10px;
     text-align: center;
-    border-radius: 8px;
 }
-#nav-conocimientos input:checked + body{
-    margin-left: -100vw;
-}
-
-
-
 body{
     display: flex;
     flex-direction: row;
     width: 400vw;
     overflow: hidden;
+    transition: margin 1s;
 /*    margin-left: -100vw;*/
 }
 section {
@@ -77,10 +81,26 @@ section {
     gap: 10px;
 }
 .conocimiento{
-	background: #fff;
-    width: 430px;
+	display: flex;
+    background: #fff;
+    width: 32vw;
+    height: 25vh;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.conocimiento img{
+    width: 100px;
     height: 100px;
 }
+
+
+
+
+
+
+
 .sobre-mi{
     background: #CFB997;
 	display: flex;

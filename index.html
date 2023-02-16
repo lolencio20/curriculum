@@ -4,43 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css" id="margin-body"></style>
 	<title>Emerson González</title>
 </head>
+
 <body>
-	<div id="navegacion">
-		<div class="navegador" id="nav-main">
-			
-			<label for="inp-main" class="navegar">
-				<p>Inicio</p>
-			</label>
-			<input type="radio" name="opc-nav" id="inp-main">
-
-		</div>
-		<div class="navegador" id="nav-conocimientos">
-			
-			<label for="inp-skills" class="navegar">
-				<p>Habilidades</p>
-			</label>
-			<input type="radio" name="opc-nav" id="inp-skills">
-
-		</div>
-		<div class="navegador" id="nav-sobre-mi">
-			
-			<label for="inp-about" class="navegar">
-				<p>Sobre mi</p>
-			</label>
-			<input type="radio" name="opc-nav" id="inp-about">
-
-		</div>
-		<div class="navegador" id="nav-contacto">
-			
-			<label for="inp-contact" class="navegar">
-				<p>Contacto</p>
-			</label>
-			<input type="radio" name="opc-nav" id="inp-contact">
-
-		</div>
-	</div>
+	<nav>
+		<ul>
+			<li><button class="button-nav" id="main-button">Inicio</li>
+			<li><button class="button-nav" id="skills-button">Conocimientos</li>
+			<li><button class="button-nav" id="about-button">Sobre mi</li>
+			<li><button class="button-nav" id="contact-button">Contacto</li>
+		</ul>
+	</nav>
 
 	<section class="main">
 		<div class="imagen-main">
@@ -53,7 +29,7 @@
 	</section>
 	
 	<section class="conocimientos" id="cont-conocimientos">
-		<div class="conocimiento" id="HTML"></div>
+		<div class="conocimiento" id="HTML"><img src="imgs/HTML-5.png"><h2>html</h2></div>
 		<div class="conocimiento" id="CSS"></div>
 		<div class="conocimiento" id="JavaScript"></div>
 		<div class="conocimiento" id="Git/GitHub"></div>
