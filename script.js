@@ -6,10 +6,10 @@ let botonInicio=document.getElementById("main-button"),
 let marginBody=document.getElementById("margin-body")
 let botones=[botonInicio,botonConocimientos,botonSobreMi,botonContacto]
 let habilidades=[]
+let contConocimientos=document.getElementById("cont-conocimientos")
 let skillBox
 botones.forEach((item)=>{
 	item.addEventListener("mousedown", (e)=>{
-		console.log(e.target.textContent)
 		switch(e.target.textContent){
 			case "Inicio": 
 				marginBody.innerHTML="body {margin-left:0vw}"
@@ -36,19 +36,23 @@ class habilidad{
 		this.exp=experiencia
 	}
 }
-let HTML5= new habilidad("HTML5","imgs/HTML-5.png",3)
-let CSS3= new habilidad("CSS3", "",2)
-let JavaScript= new habilidad("JavaScript", "", 2)
-let gitGithub= new habilidad("Git/GitHub","",2)
+let HTML5= new habilidad("HTML5","imgs/HTML-5.png","Intermedio")
+let CSS3= new habilidad("CSS3", "imgs/css-3.png","Intermedio")
+let JavaScript= new habilidad("JavaScript", "imgs/js.png", "Avanzado")
+let gitGithub= new habilidad("Git/GitHub","imgs/github.png","Intermedio")
 
 
 
-habilidades.push(HTML5,CSS3,JavaScript)
+habilidades.push(HTML5,CSS3,JavaScript,gitGithub)
 console.log(habilidades)
 habilidades.forEach((e)=>{
-
 	skillBox=`<div class="conocimiento" id="${e.nombre}"><img src="${e.img}">
-		</div>`
+			<div>
+			<h2>html</h2>
+			<p>${e.exp}</p>
+		</div>
+	</div>`
+	contConocimientos.innerHTML+=skillBox
 
 
 })

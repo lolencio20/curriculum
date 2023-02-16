@@ -19,7 +19,7 @@ nav{
     display: flex;
     position: fixed;
     width: 100vw;
-    transition: margin 1.2s;
+    transition: margin-left 1.2s;
 
 }
 nav ul{
@@ -33,7 +33,7 @@ nav ul li{
     list-style: none;
 }
 .button-nav{
-    background: #fff;
+    background: #fff5;
     border: none;
     display: block;
     width: 100px;
@@ -41,13 +41,20 @@ nav ul li{
     font-size: 15px;
     border-radius: 10px;
     text-align: center;
+    transition: background .5s;
+}
+.button-nav:hover{
+    background: #fff;
+}
+.button-nav:active{
+    background: #fad6a5;
 }
 body{
     display: flex;
     flex-direction: row;
     width: 400vw;
     overflow: hidden;
-    transition: margin 1s;
+    transition: margin-left 1s;
 /*    margin-left: -100vw;*/
 }
 section {
@@ -81,6 +88,7 @@ section {
     gap: 10px;
 }
 .conocimiento{
+    color: #7B8FA1;
 	display: flex;
     background: #fff;
     width: 32vw;
@@ -122,4 +130,39 @@ section {
 .sobre-mi h2{
     color: #000;
     padding-left: 10%;
+}
+
+.contacto{
+    background: #FAD6A5;
+}
+.contacto form {
+    align-items: center;
+    background: #3C2A21;
+    width: 60vw;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4%;
+    border-radius: 40px;
+}
+.contacto form textarea{
+    height: 100px;
+
+    resize: none;
+}
+.contacto form input, .contacto form textarea{
+    width: 80%;
+    background: none;
+    border: solid 1px #fad6a5;
+    padding: 8px;
+    border-radius: 12px;
+}
+.contacto form button {
+    background: #fad6a5;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    width: 50%;
+    height: 40px
 }
