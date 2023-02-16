@@ -88,15 +88,16 @@ section {
     gap: 10px;
 }
 .conocimiento{
-    color: #7B8FA1;
-	display: flex;
-    background: #fff;
+    color: #000;
+    display: flex;
+    background: #FAD6A5;
     width: 32vw;
     height: 25vh;
     padding: 10px;
     display: flex;
     gap: 10px;
     align-items: center;
+    border-radius: 20px;
 }
 .conocimiento img{
     width: 100px;
@@ -152,6 +153,7 @@ section {
     resize: none;
 }
 .contacto form input, .contacto form textarea{
+    color: #fff;
     width: 80%;
     background: none;
     border: solid 1px #fad6a5;

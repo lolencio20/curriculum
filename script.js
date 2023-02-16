@@ -8,6 +8,7 @@ let botones=[botonInicio,botonConocimientos,botonSobreMi,botonContacto]
 let habilidades=[]
 let contConocimientos=document.getElementById("cont-conocimientos")
 let skillBox
+let botonEnviar=document.getElementById("enviar-email")
 botones.forEach((item)=>{
 	item.addEventListener("mousedown", (e)=>{
 		switch(e.target.textContent){
@@ -56,3 +57,8 @@ habilidades.forEach((e)=>{
 
 
 })
+
+botonEnviar.addEventListener("Click",(e)=>{
+	e.preventDefault()
+})
+
